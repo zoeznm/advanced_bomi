@@ -1,6 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/router';
-// import './SearchBar.css';
+import '../styles/SearchBar.css';
 
 type Props = { onMenuClick: () => void };
 

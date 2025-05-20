@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SearchBar from '../components/SearchBar';
 import Navbar from '../components/Navbar';
-// import '../styles/MainPage.css';
+import '../styles/MainPage.css';
 
 export default function MainPage() {
   const [showNavbar, setShowNavbar] = useState(false);
