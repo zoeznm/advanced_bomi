@@ -1,0 +1,13 @@
+/* File: src/styles/Page.css */
+.topbar {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.content {
+  margin-top: 5rem;
+  text-align: center;
+}
