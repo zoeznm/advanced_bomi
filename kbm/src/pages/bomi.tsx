@@ -1,5 +1,6 @@
 // File: src/pages/bomi.tsx
 import { useState } from 'react';
+import Link from 'next/link';
 import SearchBar from '../components/SearchBar';
 import Navbar from '../components/Navbar';
 import '../styles/MainPage.css';
@@ -12,6 +13,9 @@ export default function Bomi() {
   return (
     <div className="container">
       <div className="topbar">
+        <Link href="/mainpage">
+          <div className="logoIcon">Front-end</div>
+        </Link>
         <SearchBar
           initialQuery="bomi"
           onMenuClick={() => setShowNavbar(!showNavbar)}
