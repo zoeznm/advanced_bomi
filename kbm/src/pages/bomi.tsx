@@ -116,8 +116,13 @@ export default function Bomi() {
   return (
     <div className="bomi-container">
       <div className="topbar">
-        <Link href="/mainpage"><div className="logoIcon">Front-end</div></Link>
-        <SearchBar initialQuery="bomi" onMenuClick={() => setShowNavbar(!showNavbar)} hideMenuButton />
+        <Link href="/mainpage">
+          <div className="logoIcon">Front-end</div>
+        </Link>
+        <SearchBar
+          initialQuery="bomi"
+          onMenuClick={() => setShowNavbar(!showNavbar)}
+        />
         {showNavbar && <Navbar />}
       </div>
       {anyExpanded && <div className="overlay" />}
