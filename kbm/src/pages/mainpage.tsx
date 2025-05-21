@@ -11,11 +11,6 @@ export default function MainPage() {
   const [showNavbar, setShowNavbar] = useState(false);
   return (
     <div className="container">
-      <header className="header">
-        <div className="navbar-right">
-          <Navbar />
-        </div>
-      </header>
       <div className="logo">
         <Link href="/mainpage">
           <span className="col1">F</span>
