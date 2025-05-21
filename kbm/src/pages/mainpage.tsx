@@ -1,14 +1,23 @@
+// File: src/pages/mainpage.tsx
 import { useState } from 'react';
+import Link from 'next/link';
 import SearchBar from '../components/SearchBar';
 import Navbar from '../components/Navbar';
 import '../styles/MainPage.css';
+import '../styles/SearchBar.css';
+import '../styles/Navbar.css';
 
 export default function MainPage() {
   const [showNavbar, setShowNavbar] = useState(false);
   return (
     <div className="container">
       <header className="header">
-        <h1 className="logo">
+        <div className="navbar-right">
+          <Navbar />
+        </div>
+      </header>
+      <div className="logo">
+        <Link href="/mainpage">
           <span className="col1">F</span>
           <span className="col2">r</span>
           <span className="col3">o</span>
@@ -18,9 +27,11 @@ export default function MainPage() {
           <span className="col7">e</span>
           <span className="col8">n</span>
           <span className="col9">d</span>
-        </h1>
-      </header>
-      <SearchBar onMenuClick={() => setShowNavbar(!showNavbar)} />
+        </Link>
+      </div>
+      <div className="search-area">
+        <SearchBar onMenuClick={() => setShowNavbar(!showNavbar)} />
+      </div>
       {showNavbar && <Navbar />}
     </div>
   );

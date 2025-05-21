@@ -1,19 +1,16 @@
-.navbar {
-  background: #f8f9fa;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.navbar ul {
-  list-style: none;
+/* File: src/styles/Navbar.css */
+.menuList {
   display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+  gap: 16px;
 }
 
-.navbar a {
+.menuList li a {
+  color: #5f6368;
+  font-size: 14px;
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  padding: 8px;
+}
+
+.menuList li a:hover {
+  text-decoration: underline;
 }

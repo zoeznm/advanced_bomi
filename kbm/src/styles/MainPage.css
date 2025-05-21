@@ -1,19 +1,35 @@
+/* File: src/styles/MainPage.css */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
 }
 
 .header {
-  margin-bottom: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 16px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 16px;
 }
 
 .logo {
-  font-size: 3rem;
+  display: flex;
+  font-size: 92px;
   font-weight: bold;
+  margin-bottom: 24px;
+  text-decoration: none;
 }
 
+.logo span { display: inline-block; }
 .logo .col1 { color: #4285F4; }
 .logo .col2 { color: #DB4437; }
 .logo .col3 { color: #F4B400; }
@@ -23,3 +39,9 @@
 .logo .col7 { color: #4285F4; }
 .logo .col8 { color: #DB4437; }
 .logo .col9 { color: #F4B400; }
+
+.search-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
