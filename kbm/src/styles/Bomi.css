@@ -5,7 +5,6 @@
   height: 100vh;
   overflow: hidden;
 }
-
 .topbar {
   position: absolute;
   top: 1rem;
@@ -15,17 +14,12 @@
   align-items: center;
   z-index: 20;
 }
-
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
   z-index: 10;
 }
-
 .boxes-container {
   position: relative;
   width: 100%;
@@ -40,17 +34,16 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 15;
   cursor: move;
+  z-index: 5;
 }
-
 .box.folded {
   height: 30px;
 }
-
 .box.expanded {
   width: 240px;
   height: 120px;
+  z-index: 20;
 }
 
 .box-controls {
@@ -61,7 +54,6 @@
   gap: 4px;
   z-index: 16;
 }
-
 .btn {
   background: none;
   border: none;
@@ -69,16 +61,13 @@
   font-size: 14px;
   width: 24px;
   height: 24px;
-  line-height: 24px;
   text-align: center;
 }
-
 .box-content {
   padding: 1rem;
   text-align: center;
   z-index: 14;
 }
-
 .logoIcon {
   font-size: 1.2rem;
   font-weight: bold;
