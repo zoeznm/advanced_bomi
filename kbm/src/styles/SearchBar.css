@@ -43,7 +43,7 @@
   max-height: 200px;
   overflow-y: auto;
   box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
-  z-index: 10;
+  z-index: 1;
 }
 
 .suggestions li {
