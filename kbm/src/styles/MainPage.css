@@ -1,10 +1,19 @@
+@font-face {
+  font-family: 'TRYGrtsk';
+  src: url('/fonts/trygrtsk-semiboldmega-bf6426552430fe5-webfont.woff2') format('woff2'),
+  url('/fonts/trygrtsk-semiboldmega-bf6426552430fe5-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* File: src/styles/MainPage.css */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
   position: relative;
 }
 
@@ -23,22 +32,18 @@
 
 .logo {
   display: flex;
-  font-size: 92px;
+  font-size: 7rem;
   font-weight: bold;
   margin-bottom: 24px;
   text-decoration: none;
+  font-family: 'TRYGrtsk', sans-serif
 }
 
 .logo span { display: inline-block; }
 .logo .col1 { color: #4285F4; }
 .logo .col2 { color: #DB4437; }
 .logo .col3 { color: #F4B400; }
-.logo .col4 { color: #4285F4; }
-.logo .col5 { color: #0F9D58; }
-.logo .col6 { color: #DB4437; }
-.logo .col7 { color: #4285F4; }
-.logo .col8 { color: #DB4437; }
-.logo .col9 { color: #F4B400; }
+.logo .col4 { color: #0F9D58; }
 
 .search-area {
   width: 100%;

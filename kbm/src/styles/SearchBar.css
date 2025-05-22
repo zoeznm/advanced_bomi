@@ -1,4 +1,6 @@
 /* File: src/styles/SearchBar.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+
 .searchWrapper {
   position: relative;
   width: 100%;
@@ -49,6 +51,7 @@
 .suggestions li {
   padding: 0.5rem 1rem;
   cursor: pointer;
+  font-family: "Jura", sans-serif;
 }
 
 .suggestions li:hover {
